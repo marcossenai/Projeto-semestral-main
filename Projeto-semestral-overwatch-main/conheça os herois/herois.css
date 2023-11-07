@@ -1,0 +1,796 @@
+/* reset */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fim reset */
+
+/* header */
+.elemento {
+    width: 100vw;
+    height: 105px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    z-index: 100;
+}
+
+.logo {
+    width: 66.58px;
+    height: 66.58px;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+
+.nome {
+    width: 310.52px;
+    height: 48.69px;
+}
+
+@font-face {
+    font-family: 'fonti';
+    src: url(font/big_noodle_titling.ttf);
+}
+
+.botão1 {
+    font: 200 24px 'fonti', sans-serif;
+    margin-left: 58px;
+    margin-right: 90px;
+    color: black;
+}
+
+.botão1:hover {
+    color: #da6025;
+    border-bottom: 3px solid black;
+
+
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+.botão2 {
+    font: 200 24px 'fonti', sans-serif;
+    margin-right: 90px;
+    color: black;
+}
+
+.botão2:hover {
+    border-bottom: 3px solid black;
+}
+
+.botão3 {
+    font: 200 24px 'fonti', sans-serif;
+    margin-right: 90px;
+    color: black;
+}
+
+.botão3:hover {
+    border-bottom: 3px solid black;
+}
+
+.botão4 {
+    font: 200 24px 'fonti', sans-serif;
+    color: black;
+
+}
+
+.arrow{
+    width: 20px;
+}
+
+#link {
+    color: black;
+}
+
+#link:hover {
+    color: #da6025;
+
+    border-bottom: 3px solid black;
+}
+
+.ink {
+    color: black;
+}
+
+.mapaRosa {
+    width: 100vw;
+    height: 575px;
+    background-color: white;
+
+}
+
+.mapa {
+    width: 100vw;
+    height: 575px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    
+
+}
+
+.gordo {
+    width: 1500px;
+    height: 500px;
+}
+
+.matheus {
+    width: 1500px;
+    height: 500px;
+}
+
+.genji {
+    width: 1400px;
+    height: 500px;
+}
+
+.slider {
+    width: 98vw;
+    height: 500px;
+    overflow: hidden;
+    left: 10px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1500px;
+    height: 500px;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 1500px;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.manual-btn {
+    border: 3px solid rgb(87, 86, 86);
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.manual-btn:hover {
+    background-color: gray;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+
+
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+
+
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+
+
+}
+
+body {
+    background-color: #c8d0df;
+}
+
+/* botoes das classes */
+.class {
+    background-color: #c2c2c2;
+    width: 100vw;
+    height: 737px;
+    display: flex;
+    background-image: url(fundo\ herois.png);
+    background-position: center;
+    background-size: 105vw 737px;
+    background-repeat: no-repeat;
+
+}
+
+.tanks {
+    background-color: none;
+    width: 30vw;
+    height: 737px;
+    padding-top: 52px;
+    padding-left: 70px;
+    justify-content: center;
+
+}
+
+#tank {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+#tank:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.linha {
+
+    margin: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.danos {
+    background-color: none;
+    width: 40vw;
+    height: 737px;
+    padding-top: 52px;
+
+}
+
+#dano {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+
+#dano:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.sups {
+    background-color: none;
+    width: 30vw;
+    height: 737px;
+    padding-top: 52px;
+    padding-right: 70px;
+
+}
+
+#sup {
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    transition: 0.2s ease;
+}
+
+#sup:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* fim dos botoes de classes */
+/* botoes individuais */
+
+.dva {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.dva:hover {
+    border-radius: 10px;
+    background-color: #ff00b8;
+}
+
+.doomfist {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.doomfist:hover {
+    border-radius: 10px;
+    background-color: #5e2903;
+}
+
+.orisa {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.orisa:hover {
+    border-radius: 10px;
+    background-color: #80ff00;
+}
+
+.rainha {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.rainha:hover {
+    border-radius: 10px;
+    background-color: #0045cb;
+}
+
+.ramatra {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.ramatra:hover {
+    border-radius: 10px;
+    background-color: #60076f;
+}
+
+.reinhardt {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.reinhardt:hover {
+    border-radius: 10px;
+    background-color: #A58B78;
+}
+
+.roadhog {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.roadhog:hover {
+    border-radius: 10px;
+    background-color: #9C7A21;
+}
+
+.sigmo {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.sigmo:hover {
+    border-radius: 10px;
+    background-color: #243F9D;
+}
+
+.winston {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.winston:hover {
+    border-radius: 10px;
+    background-color: #243F9D;
+}
+
+.ratinho {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.ratinho:hover {
+    border-radius: 10px;
+    background-color: #8F3C00;
+}
+
+.zarya {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.zarya:hover {
+    border-radius: 10px;
+    background-color: #C3208C;
+}
+
+/* fim botao tanks */
+
+/* começo botão danos */
+
+.ashe {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.ashe:hover {
+    border-radius: 10px;
+    background-color: #A02D2C;
+}
+
+.bastion {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.bastion:hover {
+    border-radius: 10px;
+    background-color: #4EE9FA;
+}
+
+.cassidy {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.cassidy:hover {
+    border-radius: 10px;
+    background-color: #C4423C;
+}
+
+.echo {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.echo:hover {
+    border-radius: 10px;
+    background-color: #00ACF5;
+}
+
+.ninja {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.ninja:hover {
+    border-radius: 10px;
+    background-color: #A9EA16;
+}
+
+.hanzo {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.hanzo:hover {
+    border-radius: 10px;
+    background-color: #A89F9F;
+}
+
+.junkerat {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.junkerat:hover {
+    border-radius: 10px;
+    background-color: #BA361F;
+}
+
+.mei {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.mei:hover {
+    border-radius: 10px;
+    background-color: #4769E2;
+}
+
+.pharah {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.pharah:hover {
+    border-radius: 10px;
+    background-color: #0086A4;
+}
+
+.reaper {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.reaper:hover {
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+.sojorn {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.sojorn:hover {
+    border-radius: 10px;
+    background-color: #550000;
+}
+
+.soldado {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.soldado:hover {
+    border-radius: 10px;
+    background-color: #004D94;
+}
+
+.sombra {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.sombra:hover {
+    border-radius: 10px;
+    background-color: #8A4C89;
+}
+
+.simmetra {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.simmetra:hover {
+    border-radius: 10px;
+    background-color: #55C6EA;
+}
+
+.tobjorn {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.tobjorn:hover {
+    border-radius: 10px;
+    background-color: #8D4C00;
+}
+
+.tracer {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.tracer:hover {
+    border-radius: 10px;
+    background-color: #FF8A00;
+}
+
+.window {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.window:hover {
+    border-radius: 10px;
+    background-color: #BD00FF;
+}
+
+/* fim dos danos */
+/* começo dos sups */
+
+.ana {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.ana:hover {
+    border-radius: 10px;
+    background-color: #093ABA;
+}
+
+.batiste {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.batiste:hover {
+    border-radius: 10px;
+    background-color: #A68B00;
+}
+
+.brigitte {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.brigitte:hover {
+    border-radius: 10px;
+    background-color: #57341A;
+}
+
+.kiriko {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.kiriko:hover {
+    border-radius: 10px;
+    background-color: #CB4965;
+}
+
+.life {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.life:hover {
+    border-radius: 10px;
+    background-color: #C2C52D;
+}
+
+.lúcio {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.lúcio:hover {
+    border-radius: 10px;
+    background-color: #039700;
+}
+
+.mercy {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.mercy:hover {
+    border-radius: 10px;
+    background-color: #EEF214;
+}
+
+.moira {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.moira:hover {
+    border-radius: 10px;
+    background-color: #9400C8;
+}
+
+.zenyatta {
+    width: 80px;
+    height: 76px;
+    transition: 0.2s ease;
+}
+
+.zenyatta:hover {
+    border-radius: 10px;
+    background-color: #D0A303;
+}
+
+.linhaNome {
+
+    margin: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 22px;
+    font: 200 24px 'fonti', sans-serif;
+}
+
+.linhaDano {
+
+    margin: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 42px;
+    font: 200 24px 'fonti', sans-serif;
+    
+}
+
+.linhaSup {
+
+    margin: 40px;
+    flex-direction: row;
+    display: flex;
+    padding-left: 22px;
+    justify-content: flex-start;
+    font: 200 24px 'fonti', sans-serif;
+}
+/* fim botoes */
+.baixo{
+    width: 600px;
+    
+}
+
+.barrinha{
+    height: 20px;
+    position: absolute;
+    width: 100vw;
+}
+.barra2{
+    height: 20px;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.borrinha{
+    height: 20px;
+    position: absolute;
+    width: 100vw;
+}
+
+.borra{
+    height: 20px;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.barra3{
+    width: 600px;
+}

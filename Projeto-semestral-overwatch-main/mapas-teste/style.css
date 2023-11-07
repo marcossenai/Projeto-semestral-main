@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    display: flexbox;
+}
+
+@font-face {
+    font-family: 'noodle';
+    src: url(font/big_noodle_titling_oblique.ttf);
+}
+
+@font-face {
+    font-family: 'noodle1';
+    src: url(font/big_noodle_titling.ttf);
+}
+
+.elemento {
+    width: 100%;
+    height: 105px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+
+.botoes {
+    font-family: 'noodle';
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-right: 35px;
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.botoes2,
+.botoes3 {
+    margin-left: 35px;
+}
+
+.botoes:hover {
+    color: #DA6025;
+    border-bottom: 2px solid black;
+}
+
+.div-botoes {
+    display: flex;
+    margin-left: 33%;
+    margin-top: 40px;
+
+}
+
+.botoes-1 {
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    font-family: 'noodle';
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.botoes-1:hover {
+    color: #DA6025;
+    ;
+}
+
+.botoes-1 span {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.botoes-1:hover span {
+    transform: rotate(180deg);
+}
+
+.logo {
+    position: absolute;
+    width: 66.58px;
+    height: 66.58px;
+    left: 45px;
+    top: 19px;
+}
+
+.nome {
+    position: absolute;
+    width: 310.52px;
+    height: 48.69px;
+    left: 131.48px;
+    top: 27.24px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+}
+
+.banner {
+   padding-top: 105px;
+    position: relative;
+    height: 600px;
+    width: auto;
+    background-image: url(image/lesserafim2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.skin {
+    height: 500px;
+    width: 900px;
+    margin-top: 100px;
+    margin-left: -80px;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+}
+
+.frase {
+    color: rgb(255, 255, 255);
+    padding-top: 270px;
+    font-family: 'noodle';
+    letter-spacing: 3px;
+    margin-left: 820px;
+    font-size: 70px;
+}
+
+@font-face {
+    font-family: 'calps';
+    src: url(calps/CalpsSans-LightItalic.ttf);
+}
+
+.texto-mapa {
+    color: white;
+    font-family: 'calps';
+    width: 560px;
+    font-size: 30px;
+    margin-left: 1020px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    line-height: 1.2;
+    
+}
+
+.barras {
+    z-index: 2;
+    position: absolute;
+    margin-left: 88%;
+    height: auto;
+    width: 300px;
+    margin-top: -420px;
+}
+
+hr{
+   color: white;
+   width: 440px;
+   height: 4px;
+   border: none;
+   background-color: white;
+   margin-left: 1010px;
+   margin-top: 5px;
+   border-radius: 19px;
+}
+
+.começo{
+   display: flex;
+   height: 100vh;
+}
+
+.barra-esquerda {
+   width: 550px;
+}
+
+.barra-direita{
+   width: 550px;
+   float: right;
+}
+
+.logo3{
+    margin-top: 20px;
+    height: 20%;
+    width: 20%;
+}
+
+.logoImagem{
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.mapinhas {
+    background-image: url(image/shambali.png);
+    background-size: cover;
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+.preto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #0000008d;
+    transition: ease-in-out 0.7s;
+}
+
+.preto::before {
+    content: "";
+    display: block;
+    width: 40%;
+    margin-left: 10%;
+    height: 4px; 
+    background-color: #00C2FF; 
+}
+
+.mapinhas:hover .preto {
+    height: 200px; 
+}
+
+
