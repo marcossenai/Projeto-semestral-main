@@ -52,7 +52,6 @@
     display: flex;
     margin-left: 33%;
     margin-top: 40px;
-
 }
 
 .botoes-1 {
@@ -68,7 +67,6 @@
 
 .botoes-1:hover {
     color: #DA6025;
-    ;
 }
 
 .botoes-1 span {
@@ -99,12 +97,11 @@
 body {
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     overflow-x: hidden;
 }
 
 .banner {
-   padding-top: 105px;
+    padding-top: 105px;
     position: relative;
     height: 600px;
     width: auto;
@@ -147,7 +144,6 @@ body {
     letter-spacing: 3px;
     margin-top: 10px;
     line-height: 1.2;
-    
 }
 
 .barras {
@@ -159,103 +155,161 @@ body {
     margin-top: -420px;
 }
 
-hr{
-   color: white;
-   width: 440px;
-   height: 4px;
-   border: none;
-   background-color: white;
-   margin-left: 1010px;
-   margin-top: 5px;
-   border-radius: 19px;
+hr {
+    color: white;
+    width: 440px;
+    height: 4px;
+    border: none;
+    background-color: white;
+    margin-left: 1010px;
+    margin-top: 5px;
+    border-radius: 19px;
 }
 
-.comeco{
+.comeco {
     background-color: #C8D6EB;
-    height: 150px;
+    height: 750px;
+    background-image: url(image/back-teste.png);
+    background-size: cover;
 }
 
 .barra-esquerda {
-   width: 550px;
+    width: 550px;
 }
 
-.barra-direita{
-   width: 550px;
-   float: right;
+.barra-direita {
+    width: 550px;
+    float: right;
 }
 
-.logo3{
+.logo3 {
     margin-top: 20px;
     margin-bottom: px;
-    height: 20%;
-    width: 20%;
-}
-
-.logoImagem{
-    text-align: center;
-    width: auto;
     height: auto;
+    width: 25%;
+}
+
+.logoImagem {
+    text-align: center;
+    width: 100%;
+    height: 120px;
     background-color: #C8D6EB;
+    padding-top: 30px;
+    
+}
+
+.barra-teste {
+    height: 35px;
+    width: 575px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 170px;
+}
+
+.topo {
+    opacity: 0;
+}
+
+.direita {
+    margin-left: 63.4%;
+}
+
+.esquerda {
+    margin-left: -2%;
+}
+
+.slide {
+    background-image: url(image/escolta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 500px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.carrosel {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-
-.mapinhas {
-    background-image: url(image/shambali.png);
-    background-size: cover;
-    position: relative;
-    width: 500px;
-    height: 300px;
-    border-radius: 5px;
+.seta {
+    height: 65px;
+    width: 65px;
 }
 
 .preto {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(0, 0, 0, 0.856);
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #000000b9;
-    transition: ease-in-out 0.7s;
+    left: 0;
+    transition: 0.5s ease-out;
 }
 
 .preto::before {
     content: "";
-    display: block;
-    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
     margin-left: 10%;
-    height: 3px; 
-    background-color: #00C2FF; 
+    height: 2px; 
+    background-color: #00C2FF;
+    transition: 0.5s ease-out;
 }
 
-.mapinhas:hover .preto {
-    height: 90px; 
+.slide:hover .preto{
+    height: 24%;
 }
 
-.mapinhas:hover .texto-oculto {
+.slide:hover .texto-oculto{
     opacity: 1;
 }
 
-.nome-mapa{
-    font-family: 'noodle';
-    letter-spacing: 2px;
+.preto p{
     color: white;
-    font-size: 20px;
+    font-family: "noodle1";
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 1%;
+    letter-spacing: 3px;
+    font-size: 30px;
 }
 
 .texto-oculto{
+    color: white;
+    font-family: 'noodle';
+    font-size: 19px;
     margin-left: 10%;
-    color: #00C2FF;
-    letter-spacing: 2px;
-    font-size: 14px;
-    font-family: 'noodle1';
-    margin-top: 1%;
+    letter-spacing: 1px;
     opacity: 0;
-    transition: opacity 0.7s ease;
+    transition: opacity 0.4s ease-in-out;
+    margin-top: 10px;
 }
 
+.seta {
+    width: 65px;
+    height: 65px;
+    transition: box-shadow 0.3s ease-out;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
+.antes{
+    margin-right: 10px;
+}
+
+.depois{
+    margin-left: 10px;
+}
+
+.seta:active {
+    transform: translateY(5px); 
+}
 
 
 
