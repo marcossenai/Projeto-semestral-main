@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'noodle';
+    src: url(font/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: 'noodle1';
+    src: url(font/big_noodle_titling_oblique.ttf);
+}
+
+.header {
+    height: 105px;
+    background-color: white;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    width: 66px;
+    height: 66px;
+    margin-left: 45px;
+}
+
+.logo-escrita {
+    width: 310px;
+    height: 49px;
+    margin-left: 20px;
+}
+
+.botoes {
+    color: black;
+    font-family: 'noodle';
+    font-size: 24px;
+}
+
+.botoes:hover{
+    color: #DA6025;
+    border-bottom: 2px solid black;
+}
+
+.botao {
+    margin-left: 100px;
+}
+
+.b2,
+.b3,
+.b4 {
+    margin-left: 70px;
+}
+
+.botao4{
+    color: black;
+    font-family: 'noodle';
+    font-size: 24px;
+}
+
+.botao4:hover{
+    color: #DA6025;
+}
+
+.span1 {
+    transition: transform 0.3s ease; /* Adiciona uma transição suave para a animação */
+}
+
+.b4:hover .span1 {
+    transform: rotate(180deg);
+}
+

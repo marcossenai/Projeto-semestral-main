@@ -3,7 +3,10 @@
     border: 0;
     padding: 0;
     text-decoration: none;
+}
 
+body {
+    overflow-x: hidden;
 }
 
 .elemento {
@@ -66,7 +69,7 @@ background {
 }
 
 .window {
-   margin-left: -70px;
+    margin-left: -70px;
     position: absolute;
     width: 550px;
     height: 380px;
@@ -85,7 +88,7 @@ background {
 
 #slider {
     width: 100%;
-    
+
     height: 25%;
     max-height: 150px;
     position: relative;
@@ -253,7 +256,7 @@ background {
 .mapas {
     width: 837px;
     height: 494px;
-    left: 650px;
+    left: 680px;
     top: 2961px;
     position: absolute;
 }
@@ -341,7 +344,7 @@ background {
     width: 530px;
     height: 14px;
     z-index: 1;
-    left: 957px;
+    left: 990px;
 }
 
 .cubana {
@@ -361,13 +364,12 @@ background {
 
 .novidades {
     background-color: #171A2C;
-    height: 137px;
+    height: 89px;
     width: 100%;
     position: absolute;
     top: 4620px;
     display: flex;
     align-items: center;
-
 }
 
 @font-face {
@@ -417,7 +419,8 @@ background {
     margin-right: 100px;
     transition: 0.5s ease;
 }
-.iconeface:hover{
+
+.iconeface:hover {
     transform: scale(1.1);
 }
 
@@ -429,7 +432,7 @@ background {
     transition: 0.5s ease;
 }
 
-.iconett:hover{
+.iconett:hover {
     transform: scale(1.1);
 }
 
@@ -445,7 +448,7 @@ background {
     opacity: 0.5;
 }
 
-.tamanho{
+.tamanho {
     width: auto;
     height: auto;
     margin-left: 30px;
@@ -466,21 +469,21 @@ background {
     margin-right: 35px;
     display: inline-block;
     position: relative;
-    border-bottom: 1px solid transparent; 
-    transition: color 0.3s, border-color 0.3s; 
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 .botoes:hover {
-    color: #DA6025; 
+    color: #DA6025;
     border-bottom: 2px solid black;
 }
 
 
-.div-botoes{
+.div-botoes {
     display: flex;
     margin-left: 33%;
     margin-top: 40px;
-    
+
 }
 
 .botoes-1 {
@@ -494,8 +497,9 @@ background {
     transition: color 0.3s;
 }
 
-.botoes-1:hover{
-    color: #DA6025;;
+.botoes-1:hover {
+    color: #DA6025;
+    ;
 }
 
 .botoes-1 span {
@@ -507,16 +511,84 @@ background {
     transform: rotate(180deg);
 }
 
-.widow-container{
+.widow-container {
     height: auto;
     width: auto;
     overflow: hidden;
 }
 
-.tela-tracer{
+.tela-tracer {
     overflow: hidden;
 }
 
-.final{
+.final {
     height: auto;
+}
+
+.logos {
+    height: 30px;
+    width: 30px;
+}
+
+.icones {
+    margin-left: 123px;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    margin-left: 20px;
+}
+
+.logo2 {
+    height: 40px;
+    width: auto;
+    margin-bottom: -4px;
+}
+
+.blizzard {
+    height: auto;
+    width: auto;
+}
+
+.bliz {
+    width: 120px;
+    height: 64px;
+    margin-left: 235px;
+}
+
+.copyRight {
+    width: auto;
+    height: auto;
+}
+
+.copy {
+    width: 254px;
+    margin-bottom: -10px;
+    margin-left: 30px;
+}
+
+.clasi {
+    width: auto;
+    height: auto;
+}
+
+.c12 {
+    width: 120px;
+    height: 55px;
+    margin-left: 300px;
+    margin-bottom: -20px;
+}
+
+.bliz:hover {
+    filter: brightness(180%);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+   .back{
+    width: 100%;
+   }
+
 }
