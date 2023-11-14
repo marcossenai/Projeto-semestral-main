@@ -90,7 +90,6 @@ background {
 
 #slider {
     width: 100%;
-    margin-top: 24px;
     height: 25%;
     max-height: 150px;
     position: relative;
@@ -182,7 +181,7 @@ background {
 .moira {
     width: 581.94px;
     height: 402px;
-    margin-top:78px;
+    margin-top: 78px;
 
 }
 
@@ -214,9 +213,11 @@ background {
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
     transition: background-color 1s ease;
+}
 
+.herois2 {
+    display: flex;
 }
 
 .herois:hover {
@@ -238,7 +239,6 @@ background {
 .tela3 {
     width: 100%;
     height: 494px;
-    top: 2961px;
 }
 
 .mapas {
@@ -251,15 +251,11 @@ background {
 .tri {
     width: 100px;
     height: 100%;
-    top: 2959px;
-    left: 492px;
 }
 
 .conhecaMapas {
     width: 606px;
     height: 167px;
-    top: 3090px;
-    left: 73px;
 }
 
 .botaoMapas {
@@ -271,18 +267,18 @@ background {
     border-radius: 10px;
     width: 267px;
     height: 65px;
-    left: 219px;
-    top: 3300px;
     display: flex;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: background-color 1s ease;
+    margin-left: 22%;
+    margin-top: 5%;
 }
 
 .botaoMapas:hover {
     font-family: 'noodle';
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(255, 123, 0);
     background-image: url(image/mapawhite.png);
     background-position: center;
     background-size: 190px 30px;
@@ -298,11 +294,7 @@ background {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.sigma {
-    width: 100%;
-    height: 780;
-    top: 3455px;
-}
+
 
 .tela5 {
     background-color: #C8D6EB;
@@ -328,14 +320,14 @@ background {
 .cubana {
     width: 477px;
     height: 425px;
-    left: 28px;
-    margin-top: 80px;
+    margin-top: 25px;
 }
 
 .att {
     width: 695px;
     height: 255px;
-    top: 4240px;
+    margin-left: 170px;
+    margin-bottom: 100px;
 }
 
 .novidades {
@@ -550,6 +542,9 @@ background {
 .clasi {
     width: auto;
     height: auto;
+    width: auto;
+    margin-left: 80%;
+    position: absolute;
 }
 
 .c12 {
@@ -562,31 +557,31 @@ background {
     filter: brightness(180%);
 }
 
-.div-logo{
+.div-logo {
     width: auto;
     margin-left: 60px;
     justify-content: center;
 }
 
-.conteudos{
+.conteudos {
     padding-left: 10%;
     height: auto;
     width: auto;
     align-items: center;
 }
 
-.tracerFoto{
+.tracerFoto {
     width: auto;
     height: auto;
     float: right;
 }
 
-.conteudo2{
+.conteudo2 {
     margin-top: 120px;
     margin-left: 120px;
 }
 
-.moira-div{
+.moira-div {
     background-image: url(image/tela2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -595,3 +590,124 @@ background {
     margin-top: -2px;
 }
 
+.background-mapas {
+    background-image: url(image/mapa-back.png);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.mapa-texto {
+    height: auto;
+    width: auto;
+    margin-left: -50%;
+}
+
+.botaoMapas-container {
+    position: relative;
+}
+
+.botaoMapas:hover #particles-js {
+    display: block;
+}
+
+.tela4 {
+    background-image: url(image/sombra-back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-top: 218px;
+}
+
+.sombra {
+    width: auto;
+    height: auto;
+}
+
+.sigmaSkin {
+    height: 605px;
+    width: auto;
+}
+
+.sigma {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .tela-tracer {
+        margin-top: 674px;
+    }
+
+    .sigmaSkin {
+        margin-top: -13px;
+    }
+
+    .sombra {
+        margin-top: -48px;
+    }
+}
+
+@media screen and (max-width: 1348px) {
+    .div-logo {
+        display: flex;
+    }
+
+    .back {
+        background-position: center;
+    }
+
+    .div-botoes{
+        display: inline;
+        justify-content: ;
+    }
+
+    .botoes-1{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .div-logo {
+        display: flex;
+    }
+
+    .nome {
+        margin-bottom: -10px;
+    }
+
+    .logo,
+    .nome {
+        height: 30px;
+        width: auto;
+    }
+
+    .back {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .elemento{
+        height: 3000px;
+
+    }
+
+    .logo,
+    .nome {
+        height: 90px;
+        width: auto;
+    }
+}

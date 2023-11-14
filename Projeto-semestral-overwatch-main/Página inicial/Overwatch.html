@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="Overwatch.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="shortcut icon" href="image/logo.png">
     <title>Wiki Overwatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha384-Ff5deXT3zLP9HZiMHPQfWllUfyZKjc74xFYzDEUIpk3RhSY+g3iJb6zSckgF5Ehb" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -19,13 +21,13 @@
 
         <div class="div-botoes">
             <a href="historia/historia.html">
-                <div class="botoes">CONHEÇA A HISTÓRIA DO JOGO</div>
+                <div class="botoes botao1">CONHEÇA A HISTÓRIA DO JOGO</div>
             </a>
             <a href="conheça os herois/herois.html">
-                <div class="botoes">CONHEÇA OS HERÓIS</div>
+                <div class="botoes botao2">CONHEÇA OS HERÓIS</div>
             </a>
             <a href="mapas/carrocel-html-css-main/index.html">
-                <div class="botoes">CONHEÇA OS MODOS</div>
+                <div class="botoes botao3">CONHEÇA OS MODOS</div>
             </a>
             <a href="#">
                 <div class="botoes-1">ADQUIRA O JOGO <span>▼</span></div>
@@ -90,7 +92,7 @@
         <div class="moira-personagem">
             <img data-aos="fade-right" src="image/moira.png" class="moira" data-aos="fade-right">
             <img data-aos="fade-up" src="image/persons.png" class="persons">
-            <a href="#">
+            <a class="herois2" href="#">
                 <div data-aos="fade-up" class="herois"></div>
             </a>
         </div>
@@ -98,27 +100,28 @@
     <script src="parallaxMoira.js"></script>
 
 
-    <div>
-        <img src="image/telita.png" class="tela3">
-        <div class="tri"><img src="image/retangulhotri.png" alt=""></div>
-        <img data-aos="fade-up" src="image/conheçamapas.png" alt="" class="conhecaMapas">
-        <div data-aos="fade-up" class="botaoMapas"></div>
+    <div class="background-mapas">
+        <div class="mapa-texto">
+            <img data-aos="fade-up" src="image/conheçamapas.png" alt="" class="conhecaMapas">
+            <div data-aos="fade-up" class="botaoMapas"></div>
+        </div>
     </div>
 
-    <div>
+    <div class="sigmaSkin">
         <img class="sigma" src="image/sigmagelo.png" alt="sigma">
     </div>
 
-    <div class="final">
-        <img class="cima" src="image/virado pra cima.png" alt="">
-        <img class="baixo" src="image/virado para baixo.png" alt="">
-        <div class="tela5"><img data-aos="fade-left" class="cubana" src="image/cubana.png" alt="sombra"></div>
+    <div class="tela4">
+        <div class="sombra">
+            <img data-aos="fade-left" class="cubana" src="image/cubana.png" alt="sombra">
+            <img data-aos="fade-right" class="att" src="image/atualização.png" alt="atualização">
+        </div>
 
-        <img data-aos="fade-right" class="att" src="image/atualização.png" alt="atualização">
     </div>
     <script src="parallaxSombra.js"></script>
 
     <footer class="novidades">
+
 
         <div class="icones">
             <img src="image/facebook.png" alt="" class="logos">
