@@ -3,6 +3,12 @@
     padding: 0;
     border: 0;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 105px;
+    height: 100%;
 }
 
 @font-face {
@@ -16,12 +22,15 @@
 }
 
 .header {
+    width: 100%;
     height: 105px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: -105px;
+    z-index: 999;
 }
 
 .logos {
@@ -33,7 +42,7 @@
 .logo {
     width: 66px;
     height: 66px;
-    margin-left: 45px;
+    margin-left: -90px;
 }
 
 .logo-escrita {
@@ -48,7 +57,7 @@
     font-size: 24px;
 }
 
-.botoes:hover{
+.botoes:hover {
     color: #DA6025;
     border-bottom: 2px solid black;
 }
@@ -63,21 +72,122 @@
     margin-left: 70px;
 }
 
-.botao4{
+.botao4 {
     color: black;
     font-family: 'noodle';
     font-size: 24px;
 }
 
-.botao4:hover{
+.botao4:hover {
     color: #DA6025;
 }
 
+
+/* rotação de 180° do span */
 .span1 {
-    transition: transform 0.3s ease; /* Adiciona uma transição suave para a animação */
+    display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 .b4:hover .span1 {
     transform: rotate(180deg);
 }
 
+.background {
+    position: relative;
+    height: 760px;
+    background-image: url(image/imagem\ background\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.branco {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.771);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plataformas {
+    width: 60px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ps5 {
+    width: 320px;
+    height: 80px;
+}
+
+.switch {
+    height: 80px;
+    width: 100px;
+}
+
+.xbox {
+    height: 80px;
+    width: 160px;
+    ;
+}
+
+.battle {
+    height: 90px;
+    width: 100px;
+}
+
+@media only screen and (max-width: 1464px) {
+    .background {
+        height: 670px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .background {
+        height: 500px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .plataformas{
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .ps5 {
+        width: 320px;
+        height: 80px;
+    }
+    
+    .switch {
+        height: 80px;
+        width: 100px;
+    }
+    
+    .xbox {
+        height: 80px;
+        width: 160px;
+        ;
+    }
+    
+    .battle {
+        height: 90px;
+        width: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .background {
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+    }
+}

@@ -2,6 +2,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -10,12 +11,14 @@ body {
 }
 
 .elemento {
+    align-items: center;
+    display: flex;
     width: 100%;
     height: 105px;
     background-color: rgb(255, 255, 255);
-    display: flex;
     position: fixed;
     z-index: 999;
+    top: 0;
 }
 
 background {
@@ -23,15 +26,18 @@ background {
 }
 
 .back {
-    margin-top: 105px;
     width: 100%;
+    margin-top: 105px;
     height: 765px;
-
+    background-image: url(image/imagem\ background\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
-    position: absolute;
-    width: 66.58px;
+    width: auto;
     height: 66.58px;
     left: 45px;
     top: 19px;
@@ -39,17 +45,16 @@ background {
 }
 
 .nome {
-    position: absolute;
     width: 310.52px;
     height: 48.69px;
-    left: 131.48px;
-    top: 27.24px;
+    margin-bottom: 7px;
+    margin-left: 10px;
 }
 
 .videogames {
-    position: absolute;
+    margin-top: auto;
     width: 100%;
-    height: 120px;
+    height: 100px;
     top: 770px;
     display: flex;
     justify-content: center;
@@ -62,33 +67,30 @@ background {
 }
 
 .tela1 {
-    position: absolute;
+    background-image: url(image/tela.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 431px;
-    top: 870px;
+    height: 500px;
 }
 
 .window {
-    margin-left: -70px;
-    position: absolute;
+    margin-left: 60px;
+    margin-top: 50px;
     width: 550px;
     height: 380px;
-    left: 980px;
     transition: transform 0.3s;
-    margin-top: 10px;
 }
 
 .jogo {
-    position: absolute;
     width: 600px;
     height: auto;
-    left: 210px;
-    top: 950px;
+    margin-bottom: 60px;
 }
 
 #slider {
     width: 100%;
-
+    margin-top: 24px;
     height: 25%;
     max-height: 150px;
     position: relative;
@@ -112,24 +114,21 @@ background {
 .telita {
     width: 100%;
     height: 540px;
-    position: absolute;
     top: 1972px;
 }
 
 .textohistoria {
     width: 701px;
     height: 230px;
-    position: absolute;
     top: 2080px;
     left: 130px;
 }
 
 .tracerperfil {
-    position: absolute;
+    float: right;
     width: 523px;
-    height: 540px;
-    top: 1972px;
-    margin-left: 61%;
+    height: 100%;
+    margin-left: 130px;
 }
 
 .histblack {
@@ -144,12 +143,11 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 262px;
     height: 65px;
-    left: 306px;
-    top: 2346px;
     display: flex;
+    margin-top: 30px;
+    margin-left: 200px;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -165,7 +163,6 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 262px;
     height: 65px;
     left: 306px;
@@ -177,23 +174,19 @@ background {
 }
 
 .tela2 {
-    position: absolute;
     width: 100%;
     height: 450px;
     top: 2512px;
 }
 
 .moira {
-    position: absolute;
     width: 581.94px;
     height: 402px;
-    left: 35px;
-    top: 2560px;
+    margin-top:78px;
 
 }
 
 .barralaranja {
-    position: absolute;
     width: 530.69px;
     height: 15px;
     left: 0px;
@@ -201,11 +194,10 @@ background {
 }
 
 .persons {
-    position: absolute;
     width: 649px;
     height: 210px;
-    left: 730px;
-    top: 2575px;
+    margin-bottom: 170px;
+    margin-left: 100px;
 }
 
 .herois {
@@ -215,12 +207,10 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 262px;
     height: 65px;
-    left: 875px;
-    top: 2816px;
-    display: flex;
+    margin-left: 830px;
+    margin-top: -140px;
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -236,7 +226,6 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 262px;
     height: 65px;
     left: 875px;
@@ -250,7 +239,6 @@ background {
     width: 100%;
     height: 494px;
     top: 2961px;
-    position: absolute;
 }
 
 .mapas {
@@ -258,21 +246,18 @@ background {
     height: 494px;
     left: 680px;
     top: 2961px;
-    position: absolute;
 }
 
 .tri {
     width: 100px;
     height: 100%;
     top: 2959px;
-    position: absolute;
     left: 492px;
 }
 
 .conhecaMapas {
     width: 606px;
     height: 167px;
-    position: absolute;
     top: 3090px;
     left: 73px;
 }
@@ -284,7 +269,6 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 267px;
     height: 65px;
     left: 219px;
@@ -304,7 +288,6 @@ background {
     background-size: 190px 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
     width: 267px;
     height: 65px;
     left: 219px;
@@ -318,7 +301,6 @@ background {
 .sigma {
     width: 100%;
     height: 780;
-    position: absolute;
     top: 3455px;
 }
 
@@ -326,12 +308,10 @@ background {
     background-color: #C8D6EB;
     width: 100%;
     height: 500px;
-    position: absolute;
     top: 4120px;
 }
 
 .cima {
-    position: absolute;
     top: 4120px;
     width: 530px;
     height: 14px;
@@ -339,12 +319,10 @@ background {
 }
 
 .baixo {
-    position: absolute;
     top: 4606px;
     width: 530px;
     height: 14px;
     z-index: 1;
-    left: 990px;
 }
 
 .cubana {
@@ -355,10 +333,8 @@ background {
 }
 
 .att {
-    position: absolute;
     width: 695px;
     height: 255px;
-    left: 690px;
     top: 4240px;
 }
 
@@ -366,7 +342,6 @@ background {
     background-color: #171A2C;
     height: 89px;
     width: 100%;
-    position: absolute;
     top: 4620px;
     display: flex;
     align-items: center;
@@ -471,6 +446,7 @@ background {
     position: relative;
     border-bottom: 1px solid transparent;
     transition: color 0.3s, border-color 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
 .botoes:hover {
@@ -481,9 +457,8 @@ background {
 
 .div-botoes {
     display: flex;
-    margin-left: 33%;
-    margin-top: 40px;
-
+    width: auto;
+    margin-left: 50px;
 }
 
 .botoes-1 {
@@ -518,7 +493,11 @@ background {
 }
 
 .tela-tracer {
+    background-image: url(image/telita.png);
     overflow: hidden;
+    margin-top: 700px;
+    height: auto;
+    display: flex;
 }
 
 .final {
@@ -576,7 +555,6 @@ background {
 .c12 {
     width: 120px;
     height: 55px;
-    margin-left: 300px;
     margin-bottom: -20px;
 }
 
@@ -584,11 +562,36 @@ background {
     filter: brightness(180%);
 }
 
-
-
-@media only screen and (max-width: 1024px) {
-   .back{
-    width: 100%;
-   }
-
+.div-logo{
+    width: auto;
+    margin-left: 60px;
+    justify-content: center;
 }
+
+.conteudos{
+    padding-left: 10%;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.tracerFoto{
+    width: auto;
+    height: auto;
+    float: right;
+}
+
+.conteudo2{
+    margin-top: 120px;
+    margin-left: 120px;
+}
+
+.moira-div{
+    background-image: url(image/tela2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 490px;
+    width: 100%;
+    margin-top: -2px;
+}
+
