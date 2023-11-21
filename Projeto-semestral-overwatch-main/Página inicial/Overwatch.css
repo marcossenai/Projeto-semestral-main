@@ -155,6 +155,7 @@ background {
 
 }
 
+
 .conheçahistoria:hover {
     background-color: rgb(255, 136, 0);
     background-image: url(image/histwhite.png);
@@ -487,7 +488,7 @@ background {
 .tela-tracer {
     background-image: url(image/telita.png);
     overflow: hidden;
-    margin-top: 700px;
+    margin-top: 675px;
     height: auto;
     display: flex;
 }
@@ -645,7 +646,199 @@ background {
 
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (min-width:425px) and (max-width: 767px) {
+   
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .div-logo {
+        display: flex;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .logo,
+    .nome {
+        height: 50px;
+        width: auto;
+    }
+
+    .back {
+        background-position: center;
+        height: 547px;
+    }
+
+    .plat {
+        height: 50px;
+    }
+
+    .videogames {
+        height: 74px;
+    }
+
+    .botoes,
+    .botoes-1 {
+        font-size: 21px;
+    }
+
+    .botoes-1 {
+        margin-left: 35px;
+    }
+
+    .frase-tamanho {
+        width: 250px;
+    }
+
+    .div-botoes {
+        flex-wrap: wrap;
+    }
+
+    .tela1 {
+        height: 775px;
+        background-size: cover;
+    }
+
+    #slider img {
+        margin-top: 350px;
+    }
+
+    .jogo {
+        margin-bottom: 0px;
+        margin-top: 40px;
+        margin-left: 11%;
+    }
+
+    .conteudo2 {
+        margin-left: 65px;
+    }
+
+    .tela-tracer {
+        margin-top: 1025px;
+    }
+
+    .tracerperfil {
+        margin-left: -60px;
+    }
+
+    .textohistoria {
+        width: auto;
+        height: 238px;
+    }
+
+    .moira {
+        width: auto;
+        height: 300px;
+        margin-left: -40px;
+    }
+
+    .persons {
+        margin-bottom: 0;
+        width: auto;
+        height: 153px;
+        margin-bottom: 150px;
+        margin-left: 56px;
+    }
+
+    .herois {
+        margin-left: 570px;
+        margin-top: -130px;
+    }
+
+    .moira-personagem {
+        flex-wrap: wrap;
+    }
+
+    .moira-div {
+        height: 386px;
+    }
+
+    .background-mapas {
+        height: 400px;
+    }
+
+    .conhecaMapas {
+        height: 122px;
+        width: auto;
+    }
+
+    .background-mapas {
+        margin-top: -6px;
+    }
+
+    .sigma {
+        margin-top: -18px;
+    }
+
+    .tela4{
+        margin-top: -71px;
+        height: 350px;
+    }
+
+    .cubana{
+        width: auto;
+        height: 320px;
+        margin-top: 30px;
+    }
+
+    .att{
+        width: auto;
+        height: 150px;
+        margin-left: 80px;
+    }
+
+    .bliz{
+        margin-left: 50px;
+    }
+
+    .icones{
+        margin-left: 70px;
+    }
+
+    .logos{
+        width: auto;
+        height: 25px;
+    }
+
+    .logo2{
+        margin-bottom: -3px;
+        height: auto;
+        width: 34px;
+    }
+    
+}
+
+@media screen and (min-width:1025px) and (max-width: 1348px) {
+    .div-logo {
+        display: flex;
+    }
+
+    .back {
+        background-position: center;
+    }
+
+    .div-botoes {
+        display: inline;
+    }
+
+    .botoes-1 {
+        margin-left: 100px;
+    }
+
+    .nome {
+        margin-top: 12px;
+    }
+
+    .div-botoes{
+        margin-left: 130px;
+    }
+    
+
+
+}
+
+@media screen and (min-width:1345px) and (max-width: 1440px) {
     .tela-tracer {
         margin-top: 674px;
     }
@@ -654,60 +847,5 @@ background {
         margin-top: -13px;
     }
 
-    .sombra {
-        margin-top: -48px;
-    }
-}
-
-@media screen and (max-width: 1348px) {
-    .div-logo {
-        display: flex;
-    }
-
-    .back {
-        background-position: center;
-    }
-
-    .div-botoes{
-        display: inline;
-        justify-content: ;
-    }
-
-    .botoes-1{
-        margin-left: 100px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .div-logo {
-        display: flex;
-    }
-
-    .nome {
-        margin-bottom: -10px;
-    }
-
-    .logo,
-    .nome {
-        height: 30px;
-        width: auto;
-    }
-
-    .back {
-        background-position: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-    .elemento{
-        height: 3000px;
-
-    }
-
-    .logo,
-    .nome {
-        height: 90px;
-        width: auto;
-    }
+    
 }

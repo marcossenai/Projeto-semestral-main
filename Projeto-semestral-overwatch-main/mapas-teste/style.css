@@ -168,7 +168,7 @@ hr {
 
 .comeco {
     background-color: #C8D6EB;
-    height: 800px;
+    margin-top: -100px;
     background-image: url(image/back-teste.png);
     background-size: cover;
 }
@@ -195,7 +195,7 @@ hr {
     height: 100px;
     background-color: #C8D6EB;
     padding-top: 30px;
-    
+
 }
 
 .barra-teste {
@@ -218,37 +218,198 @@ hr {
     margin-left: -2%;
 }
 
-.slide {
-    background-image: url(image/escolta.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 600px;
-    height: 500px;
-    border-radius: 9px;
-    position: relative;
+
+.slider {
+    width: 55%;
+    padding-top: 100px;
 }
 
-.carrosel {
-    height: 660px;
+.slider input {
+    display: none;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 350px;
+    perspective: 1000px;
+    overflow: hidden;
+    left: 340px;
+    
+
+
+}
+
+.testimonials {
+    display: flex;
+    height: 600px;
+}
+
+img {
+    width: 700px;
+    height: 400px;
+}
+
+.testimonials .item {
+    width: 710px;
+    padding: 1px;
+    height: 500px;
+    position: absolute;
+    top: 11110;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.4s;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.item {
+    display: flex;
+
+}
+
+
+
+.testimonials .item h1 {
+    font-size: 114px;
+    color: rgb(255, 255, 255);
+}
+
+.dots {
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.dots label {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    margin: 7px;
+    transition-duration: 0.2s;
+    left: 360px;
+    position: relative;
+}
 
-.seta {
-    height: 65px;
-    width: 65px;
+#t-1:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-4"],
+#t-5:checked~.dots label[for="t-5"] {
+    transform: scale(2);
+    background-color: #000000;
+    box-shadow: 0px 0px 0px 3px #dddddd24;
+}
+
+#t-1:checked~.dots label[for="t-2"],
+#t-2:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-3"],
+#t-3:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-4"],
+#t-4:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-5"],
+#t-5:checked~.dots label[for="t-4"] {
+    transform: scale(1.5);
+}
+
+#t-1:checked~.testimonials label[for="t-3"],
+#t-2:checked~.testimonials label[for="t-4"],
+#t-3:checked~.testimonials label[for="t-5"],
+#t-4:checked~.testimonials label[for="t-1"],
+#t-5:checked~.testimonials label[for="t-2"] {
+    transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+    z-index: 2;
+}
+
+#t-1:checked~.testimonials label[for="t-2"],
+#t-2:checked~.testimonials label[for="t-3"],
+#t-3:checked~.testimonials label[for="t-4"],
+#t-4:checked~.testimonials label[for="t-5"],
+#t-5:checked~.testimonials label[for="t-1"] {
+    transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+    z-index: 3;
+}
+
+#t-2:checked~.testimonials label[for="t-1"],
+#t-3:checked~.testimonials label[for="t-2"],
+#t-4:checked~.testimonials label[for="t-3"],
+#t-5:checked~.testimonials label[for="t-4"],
+#t-1:checked~.testimonials label[for="t-5"] {
+    transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+    z-index: 3;
+}
+
+#t-3:checked~.testimonials label[for="t-1"],
+#t-4:checked~.testimonials label[for="t-2"],
+#t-5:checked~.testimonials label[for="t-3"],
+#t-2:checked~.testimonials label[for="t-5"],
+#t-1:checked~.testimonials label[for="t-4"] {
+    transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+
+}
+
+#t-1:checked~.testimonials label[for="t-1"],
+#t-2:checked~.testimonials label[for="t-2"],
+#t-3:checked~.testimonials label[for="t-3"],
+#t-4:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-5"] {
+
+    z-index: 4;
+}
+
+.slide {
+    background-image: url(image/escolta.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 400px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.s2 {
+    background-image: url(image/circuitRoyal.webp);
+}
+
+.s3 {
+    background-image: url(image/hanamura.png);
+}
+
+.s4 {
+    background-image: url(image/kanezaka.png);
+}
+
+.s5 {
+    background-image: url(image/world.png);
+    
+}
+
+.slide {
+    display: flex;
 }
 
 .preto {
     width: 100%;
     height: 15%;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(0, 0, 0, 0.675);
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
+    margin-bottom: 49px;
+}
+
+.preto:hover{
+    height: 25%;
 }
 
 .preto::before {
@@ -263,73 +424,6 @@ hr {
     transition: 0.5s ease-out;
 }
 
-.slide:hover .preto{
-    height: 24%;
-}
-
-.slide:hover .texto-oculto{
-    opacity: 1;
-}
-
-.preto p{
-    color: white;
-    font-family: "noodle1";
-    margin-left: 10%;
-    margin-top: 1%;
-    letter-spacing: 3px;
-    font-size: 30px;
-}
-
-.texto-oculto{
-    color: white;
-    font-family: 'noodle';
-    font-size: 19px;
-    margin-left: 10%;
-    letter-spacing: 1px;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    margin-top: 10px;
-}
-
-.seta {
-    width: 65px;
-    height: 65px;
-    transition: box-shadow 0.3s ease-out;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.antes{
-    margin-right: 10px;
-}
-
-.depois{
-    margin-left: 10px;
-}
-
-.seta:active {
-    transform: translateY(5px); 
-}
-
-.slide1{
-    background-image: url(image/kanezaka.png);
-}
-
-.slide2{
-    background-image: url(image/world.png);
-}
-
-.slide3{
-    background-image: url(image/hanamura.png);
-}
-
-.slide4{
-    background-image: url(image/toronto.png);
-}
-
-.slide5{
-    background-image: url(image/bandeira.png);
-}
 
 
 
