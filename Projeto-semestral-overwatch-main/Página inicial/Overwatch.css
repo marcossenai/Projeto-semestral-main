@@ -41,7 +41,6 @@ background {
     height: 66.58px;
     left: 45px;
     top: 19px;
-
 }
 
 .nome {
@@ -641,6 +640,10 @@ background {
 .sigma {
     width: 100%;
     height: auto;
+}
+
+.logos:hover {
+    opacity: 0.4; 
 }
 
 

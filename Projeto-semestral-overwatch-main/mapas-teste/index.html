@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -9,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <title>Wiki Overwatch</title>
+
 </head>
 
 <body>
@@ -47,7 +49,7 @@
 
     <div class="comeco">
 
-       
+
 
         <div class="slider">
             <input type="radio" name="testimonial" id="t-1">
@@ -58,37 +60,78 @@
             <div class="testimonials">
                 <label class="item" for="t-1">
                     <div class="slide">
-                        <div class="preto"></div>
+                        <div class="preto">
+                            <p class="frase-preto">COMBATE ATÉ A MORTE
+                            <div class="reticencias" id="expandir-preto">
+                                <p class="tresP">...</p>
+                            </div>
+                            </p>
+                            <p class="texto-expandido">O modo Combate até a Morte em Overwatch é um modo de jogo no qual
+                                o objetivo é alcançar 20 pontos antes de qualquer outro jogador ou ter a maior
+                                quantidade de pontos antes que o tempo acabe.</p>
+                        </div>
                     </div>
+                    <script src="expandirpreto.js"></script>
+
                 </label>
                 <label class="item" for="t-2">
                     <div class="slide s2">
-                        <div class="preto">
-
+                        <div class="preto preto1">
+                            <p class="frase-preto preto1">ESCOLTA DE CARGA
+                            <div class="reticencias" id="expandir-preto1">
+                                <p class="tresP">...</p>
+                            </div>
+                            </p>
+                            <p class="texto-expandido1">O modo Escolta em Overwatch é um modo de jogo no qual o objetivo
+                                da equipe atacante é escoltar uma carga até um ponto de entrega, enquanto a equipe
+                                defensora tenta impedir seu progresso.</p>
                         </div>
                     </div>
                 </label>
+                <script src="expandirpreto1.js"></script>
+
                 <label class="item" for="t-3">
                     <div class="slide s3">
-                        <div class="preto">
-
+                        <div class="preto preto2">
+                            <p class="frase-preto preto2">CAPTURA DE PONTOS
+                            <div class="reticencias" id="expandir-preto2">
+                                <p class="tresP">...</p>
+                            </div>
+                            </p>
+                            <p class="texto-expandido2">Neste modo, uma equipe é designada como Atacante e a outra como Defensora. Todos os mapas de Captura de Pontos são compostos por dois pontos (rotulados como A e B). O objetivo dos Atacantes é capturar esses pontos.</p>
                         </div>
                     </div>
                 </label>
+                <script src="expandirpreto2.js"></script>
+
                 <label class="item" for="t-4">
                     <div class="slide s4">
-                        <div class="preto">
-
+                        <div class="preto preto3">
+                            <p class="frase-preto preto3">MODO HÍBRIDO
+                            <div class="reticencias" id="expandir-preto3">
+                                <p class="tresP">...</p>
+                            </div>
+                            </p>
+                            <p class="texto-expandido3">A equipe atacante deve lutar contra os defensores para ganhar controle de um ponto onde a carga está. Uma vez que o ponto é capturado a carga é então desbloqueada, e os jogadores devem escolta-la para vencer.</p>
                         </div>
                     </div>
                 </label>
+                <script src="expandirpreto3.js"></script>
+
                 <label class="item" for="t-5">
                     <div class="slide s5">
-                        <div class="preto">
-
+                        <div class="preto preto4">
+                            <p class="frase-preto preto4">CAPTURE A BANDEIRA
+                            <div class="reticencias" id="expandir-preto4">
+                                <p class="tresP">...</p>
+                            </div>
+                            </p>
+                            <p class="texto-expandido4">Neste modo, duas equipes de seis jogadores tentam pegar a bandeira da equipe adversária enquanto defendem a sua própria. O objetivo é ter três bandeiras ou mais do que o seu adversário quando o tempo acabar.</p>
                         </div>
                     </div>
                 </label>
+                <script src="expandirpreto4.js"></script>
+
             </div>
             <br />
             <div class="dots">
@@ -102,17 +145,26 @@
 
     </div>
 
+    <footer class="novidades">
+        <div class="icones">
+            <img src="image/facebook.png" alt="" class="logos">
+            <img src="image/twitter.png" alt="" class="logos logo1">
+            <img src="image/youtube.png" alt="" class="logos logo2">
+            <img src="image/insta.png" alt="" class="logos logo3">
+        </div>
 
+        <div class="blizzard">
+            <img src="image/blizzard2.png" alt="" class="bliz">
+        </div>
 
+        <div class="copyRight">
+            <img class="copy" src="image/copyright.png" alt="">
+        </div>
 
-
-
-
-    </div>
-    <script src="gsapLogo3.js"></script>
-
-
-
+        <div class="clasi">
+            <img src="image/classificacao.png" alt="" class="c12">
+        </div>
+    </footer>
 
 
 

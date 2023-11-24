@@ -237,7 +237,7 @@ hr {
     perspective: 1000px;
     overflow: hidden;
     left: 340px;
-    
+
 
 
 }
@@ -262,15 +262,13 @@ img {
     text-align: center;
     transition: transform 0.4s;
     user-select: none;
-    cursor: pointer;
     align-items: center;
     justify-content: center;
-   
+
 }
 
 .item {
     display: flex;
-
 }
 
 
@@ -371,7 +369,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     width: 700px;
-    height: 400px;
+    height: 403px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -390,7 +388,7 @@ img {
 
 .s5 {
     background-image: url(image/world.png);
-    
+
 }
 
 .slide {
@@ -398,19 +396,19 @@ img {
 }
 
 .preto {
-    width: 100%;
+    width: 98.6%;
     height: 15%;
-    background-color: rgba(0, 0, 0, 0.675);
+    background-color: rgba(0, 0, 0, 0.797);
     position: absolute;
     bottom: 0;
-    left: 0;
-    transition: 0.2s ease-out;
     margin-bottom: 49px;
+    display: flex;
+    transition: height 0.5s ease;
 }
 
-.preto:hover{
+/* .preto:hover{
     height: 25%;
-}
+} */
 
 .preto::before {
     content: "";
@@ -419,12 +417,155 @@ img {
     left: 0;
     width: 220px;
     margin-left: 10%;
-    height: 2px; 
+    height: 3px;
     background-color: #00C2FF;
     transition: 0.5s ease-out;
+}
+
+
+.frase-preto {
+    color: white;
+    font-family: 'noodle1';
+    font-size: 27px;
+    margin-left: 70px;
+    margin-top: 20px;
+    letter-spacing: 1.3px;
+
+}
+
+.reticencias {
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    height: 30px;
+    margin-top: 19px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.tresP {
+    margin-top: -14px;
+    font-size: 35px;
+}
+
+.texto-expandido,
+.texto-expandido1,
+.texto-expandido2,
+.texto-expandido3,
+.texto-expandido4 {
+    margin-top: 60px;
+    margin-left: -263px;
+    font-family: 'poppins';
+    color: white;
+    letter-spacing: 0px;
+    font-size: 18px;
+    width: 550px;
+    text-align: justify;
+    display: none;
+}
+
+.texto-expandido1 {
+    margin-left: -230px;
+}
+
+.texto-expandido2 {
+    margin-left: -250px;
+}
+
+.texto-expandido3 {
+    margin-left: -200px;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(font/Poppins/Poppins-Regular.ttf);
 }
 
 
 
 
 
+
+
+
+
+
+
+.icones {
+    margin-left: 123px;
+}
+
+.logos {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+}
+
+.logos:hover {
+    opacity: 0.4;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    margin-left: 20px;
+}
+
+.logo2 {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 4px;
+
+}
+
+.blizzard {
+    height: auto;
+    width: auto;
+}
+
+.bliz {
+    width: 120px;
+    height: 64px;
+    margin-left: 235px;
+}
+
+.copyRight {
+    width: auto;
+    height: auto;
+}
+
+.copy {
+    width: 254px;
+    height: auto;
+    margin-bottom: -10px;
+    margin-left: 30px;
+}
+
+.clasi {
+    width: auto;
+    height: auto;
+    width: auto;
+    margin-left: 80%;
+    position: absolute;
+}
+
+.c12 {
+    width: 120px;
+    height: 55px;
+    margin-bottom: -20px;
+}
+
+.novidades {
+    background-color: #171A2C;
+    height: 89px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bliz:hover {
+    filter: brightness(180%);
+}
