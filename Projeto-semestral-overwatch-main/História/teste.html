@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        corpo {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+        }
+
+        #minhaLista {
+            list-style-type: none;
+            padding: 0;
+            width: 50%;
+        }
+
+        #minhaLista>li {
+            background-color: #d9d9d9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #minhaLista>li>ul {
+            background-color: #bfbfbf;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        #contenedorImagem {
+            width: 50%;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <ul id="minhaLista">
+            <li>Item 1
+                <ul class="oculto">
+                    <li data-imagem="image/aEraDeOuro.png">Subitem 1.1</li>
+                </ul>
+            </li>
+            <li>Item 2
+                <ul class="oculto">
+                    <li data-imagem="image/ouroTermina.png">Subitem 2.1</li>
+                </ul>
+            </li>
+            <li>Item 3
+                <ul class="oculto">
+                    <li data-imagem="image/crise.png">Subitem 3.1</li>
+                </ul>
+            </li>
+            <li>Item 4
+                <ul class="oculto">
+                    <li data-imagem="image/aOverwatch.png">Subitem 4.1</li>
+                </ul>
+            </li>
+            <li>Item 5
+                <ul class="oculto">
+                    <li data-imagem="image/aQueda.png">Subitem 5.1</li>
+                </ul>
+            </li>
+            <li>Item 6
+                <ul class="oculto">
+                    <li data-imagem="image/caos.png">Subitem 6.1</li>
+                </ul>
+            </li>
+            <li>Item 7
+                <ul class="oculto">
+                    <li data-imagem="image/aVolta.png">Subitem 7.1</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="contenedorImagem"></div>
+    </div>
+
+    <script>
+        document.querySelectorAll('#minhaLista > li').forEach(function (li) {
+            li.addEventListener('click', function (e) {
+                var subLista = e.target.querySelector('ul');
+                if (subLista && subLista.classList.contains('oculto')) {
+                    document.querySelectorAll('#minhaLista > li > ul').forEach(function (ul) {
+                        ul.classList.add('oculto');
+                    });
+                    subLista.classList.remove('oculto');
+                    var imagemSrc = subLista.querySelector('li').dataset.imagem;
+                    document.querySelector('#contenedorImagem').innerHTML = '<img src="' + imagemSrc + '">';
+                } else if (subLista) {
+                    subLista.classList.add('oculto');
+                    document.querySelector('#contenedorImagem').innerHTML = '';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
