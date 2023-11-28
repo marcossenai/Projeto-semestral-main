@@ -121,6 +121,38 @@ body {
 
 
 
+/* Banner */
+
+.banner {
+    padding-top: 105px;
+    position: relative;
+    height: 600px;
+    width: auto;
+    background-image: url(image/lesserafim2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+}
+
+.skin {
+    width: 1000px;
+    height: 470px;
+    margin-top: 130px;
+    margin-left: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .historia {
     padding-top: 105px;
