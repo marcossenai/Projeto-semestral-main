@@ -30,6 +30,11 @@ body {
     src: url(font/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'calps';
+    src: url(calps/CalpsSans-LightItalic.ttf);
+}
+
 .elemento {
     width: 100%;
     height: 105px;
@@ -133,13 +138,72 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     display: flex;
+    z-index: -2;
 }
 
 .skin {
-    width: 1000px;
-    height: 470px;
-    margin-top: 130px;
-    margin-left: -100px;
+    width: 1070px;
+    height: 440px;
+    margin-top: 160px;
+    margin-left: -130px;
+}
+
+.frase {
+    color: rgb(255, 255, 255);
+    padding-top: 270px;
+    font-family: 'noodle';
+    letter-spacing: 3px;
+    margin-left: -120px;
+    width: 1500px;
+    font-size: 70px;
+}
+
+hr {
+    color: white;
+    width: 440px;
+    height: 4px;
+    border: none;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 19px;
+    margin-left: 90px;
+}
+
+.texto-mapa {
+    color: white;
+    font-family: 'calps';
+    width: 560px;
+    font-size: 30px;
+    margin-left: 130px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.comeco {
+    background-color: #C8D6EB;
+    background-image: url(image/back-teste.png);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+
+.barras {
+    height: 35px;
+    width: 575px;
+    margin-top: -30px;
+    margin-left: -19px;
+    position: absolute;
+}
+
+.barras2 {
+    height: 35px;
+    width: 575px;
+    margin-top: -30px;
+    position: absolute;
+    right: 0;
+    margin-right: -19px;
 }
 
 
@@ -158,29 +222,48 @@ body {
     padding-top: 105px;
 }
 
-corpo {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    padding: 20px;
-    display: flex;
-}
-
 #minhaLista {
     list-style-type: none;
     padding: 0;
-    width: 50%;
+    width: 30%;
+    margin-left: 100px;
 }
 
 #minhaLista>li {
-    background-color: #d9d9d9;
+    font-family: 'poppins';
+    background-color: #d9d9d900;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.515);
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.693);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+#minhaLista>li:hover {
+    color: white;
+}
+
+.selecionado {
+    color: white;
+    text-shadow: none;
+}
+
+ul {
+    list-style: none;
+    font-size: 17px;
+    color: white;
+    text-shadow: none;
+}
+
+
+
+
+
 #minhaLista>li>ul {
-    background-color: #bfbfbf;
+    background-color: #00000066;
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -190,13 +273,15 @@ corpo {
     display: none;
 }
 
-#contenedorImagem {
+#containerImagem {
     width: 50%;
     height: 50px;
-    margin-left: 10px;
+    margin-left: 130px;
+
 }
 
 img {
-    width: 100%;
-    height: 500px;
+    border-radius: 5px;
+    width: 700px;
+    height: 400px;
 }
