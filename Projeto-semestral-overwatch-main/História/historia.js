@@ -19,9 +19,21 @@ document.querySelectorAll('#minhaLista > li').forEach(function (li) {
             subLista.classList.remove('oculto');
             var imagemSrc = subLista.querySelector('li').dataset.imagem;
             document.querySelector('#containerImagem').innerHTML = '<img src="' + imagemSrc + '">';
+
+            // Faz a imagem com a classe .imagemFixa ficar invisível
+            var imagemFixa = document.querySelector('.imagemFixa');
+            if (imagemFixa) {
+                imagemFixa.style.display = 'none';
+            }
         } else if (subLista) {
             subLista.classList.add('oculto');
             document.querySelector('#containerImagem').innerHTML = '';
+
+            // Faz a imagem com a classe .imagemFixa ficar visível novamente
+            var imagemFixa = document.querySelector('.imagemFixa');
+            if (imagemFixa) {
+                imagemFixa.style.display = 'block';
+            }
         }
     });
 });

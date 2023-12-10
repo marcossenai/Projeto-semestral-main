@@ -207,8 +207,6 @@ hr {
     margin-right: -19px;
 }
 
-
-
 .imagemFixa {
     position: absolute;
     margin-left: 686px;
@@ -294,4 +292,86 @@ img {
     border-radius: 5px;
     width: 700px;
     height: 400px;
+}
+
+
+
+
+
+
+.icones {
+    margin-left: 123px;
+}
+
+.logos {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+}
+
+.logos:hover {
+    opacity: 0.4;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+    margin-left: 20px;
+}
+
+.logo2 {
+    height: 45px;
+    width: 45px;
+    margin-bottom: 4px;
+
+}
+
+.blizzard {
+    height: auto;
+    width: auto;
+}
+
+.bliz {
+    width: 120px;
+    height: 64px;
+    margin-left: 235px;
+}
+
+.copyRight {
+    width: auto;
+    height: auto;
+}
+
+.copy {
+    width: 254px;
+    height: auto;
+    margin-bottom: -10px;
+    margin-left: 30px;
+}
+
+.clasi {
+    width: auto;
+    height: auto;
+    width: auto;
+    margin-left: 80%;
+    position: absolute;
+}
+
+.c12 {
+    width: 120px;
+    height: 55px;
+    margin-bottom: -20px;
+}
+
+.novidades {
+    background-color: #171A2C;
+    height: 89px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bliz:hover {
+    filter: brightness(180%);
 }
