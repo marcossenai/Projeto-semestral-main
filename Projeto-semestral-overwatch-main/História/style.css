@@ -375,3 +375,7 @@ img {
 .bliz:hover {
     filter: brightness(180%);
 }
+
+@media screen {
+    
+}
