@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="imagem/logo.png">
+    <title>GENJI!</title>
+</head>
+
+<body>
+    <div class="elemento">
+        <div class="div-logo">
+            <img class="logo" src="image/logo.png" alt="logo">
+            <img class="nome" src="image/logo2.png" alt="overwatch">
+        </div>
+        <div class="div-botoes">
+            <a href="../Página inicial/Overwatch.html">
+                <div class="botoes botoes">VOLTAR PARA O INÍCIO</div>
+            </a>
+            <a href="../História/index.html">
+                <div class="botoes botoes2">CONHEÇA A HISTÓRIA DO JOGO</div>
+            </a>
+            <a href="../mapas-teste/index.html">
+                <div class="botoes botoes3">CONHEÇA OS MODOS</div>
+            </a>
+            <a href="#">
+                <div class="botoes-1">ADQUIRA O JOGO <span>▼</span></div>
+            </a>
+        </div>
+    </div>
+
+    <main id="principal">
+        <div id="nomes">
+            <h1>GENJI</h1>
+            <h2><iconify-icon icon="emojione-v1:flag-for-japan"></iconify-icon>Japão, Hanamura</h2>
+            <h3><iconify-icon icon="mdi:bullets"></iconify-icon>Dano</h3>
+        </div>
+        <div id="ninja">
+            <img id="genji" src="imagem/genji.png" alt="">
+        </div>
+    </main>
+
+    <!-- primeira imagem -->
+
+    <!-- carrosel automatico -->
+    <div id="frase">
+        <div id="retangulo1" class="retangulo"></div>
+        <div id="trapezio" data-aos="fade-right" data-aos-duration="900">
+            <h2 id="lamina">“a lÂmina mais afiada é <br> aquela que não se vê”</h2>
+            <p id="negocio">
+                <span class="span">Dentro do jogo Overwatch, Genji é um personagem da <br> classe de ataque.</span>
+                <span class="span">Ele é um ágil ninja cibernético com <br> habilidades acrobáticas e letais.</span>
+                <span class="span">Seu papel principal é o de <br> um flanqueador e assassino de curta distância</span>
+        </div>
+        <div id="retangulo2" class="retangulo"></div>
+    </div>
+    <!-- carrosel automatico -->
+
+    <!-- habilidades -->
+    <div id="carrosel">
+
+        <div id="habili">
+            <h1>habilidades</h1>
+        </div>
+        <div class="habilidades-caro" data-aos="zoom-in">
+            <div id="antes">
+                < </div>
+                    <div class="poder" id="poder-desviar">
+                        <div id="descricao_desviar">
+                            <h2>Desviar</h2>
+                            <p>Atalho padrão: E</p>
+                            <p>Dano: 50 (45 em armaduras)</p>
+                            <p>Recarga: 8 segundos</p>
+                            <h4>Genji avança para frente, golpeando com sua katana e passando por inimigos em seu
+                                caminho. Se Genji eliminar um alvo com essa habilidade, ele pode usá-la de novo
+                                instantaneamente.</h4>
+                        </div>
+                    </div>
+                    <div class="poder" id="poder-ult">
+                        <div id="descricao_ult">
+                            <h2>Lamina do dragao</h2>
+                            <p>Atalho padrão : Q</p>
+                            <p>Duração: 6 seg</p>
+                            <p>Velocidade de ataque: 1 ataque a cada 0.9 segundos (aproximadamente)</p>
+                            <p>Dano: 120 por ataque</p>
+                            <h4>Genji brande sua katana por um breve período de tempo. Até embainhar sua espada, Genji
+                                consegue acertar golpes mortais em qualquer alvo ao seu alcance.</h4>
+                        </div>
+                    </div>
+                    <div class="poder" id="poder-shuriken">
+                        <div id="descricao_shuriken">
+                            <h2>Shuriken</h2>
+                            <p>Munição: 24 (8×3 shurikens)</p>
+                            <p>Cadência de tiro: Primário – 3 shurikens por segundo | Secundário 3 shurikens por 0,7
+                                segundos (valores aproximados)</p>
+                            <p>Dano: 28 por shuriken</p>
+                            <p>Recarga: 1,5 segundos</p>
+                            <h4>Genji solta três estrelas ninjas mortais em sucessão rápida. Como alternativa, ele pode
+                                jogar três shurikens em uma abrangência maior.</h4>
+                        </div>
+                    </div>
+                    <div id="proximo">></div>
+            </div>
+        </div>
+        <!-- habilidades -->
+
+        <!-- desenhos -->
+        <div id="geral">
+            <div id="canto">
+                <div id="status">
+                    <h3 class="desenhe">Desenhe seus personagens favoritos!
+                        SEM USAR BORRACHA!!!!</h3>
+                </div>
+                <canvas id="desenhar" width="800" height="520px"></canvas>
+                <div id="ferramentas">
+                    <div class="bloco" id="colors">
+                        <div id="titulo">
+                            <h4 class="funcoes">Cores/Largura</h4>
+                        </div>
+                        <input type="color">
+                        <input type="number" min="1" max="20" id="largura">
+                        <div class="logoInicio" id="img__footer" onclick="voltarParaInicio()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="novidades">
+            <div class="icones">
+                <img src="image/facebook.png" alt="" class="logos">
+                <img src="image/twitter.png" alt="" class="logos logo1">
+                <img src="image/youtube.png" alt="" class="logos logo2">
+                <img src="image/insta.png" alt="" class="logos logo3">
+            </div>
+
+            <div class="blizzard">
+                <img src="image/blizzard2.png" alt="" class="bliz">
+            </div>
+
+            <div class="copyRight">
+                <img class="copy" src="image/copyright.png" alt="">
+            </div>
+
+            <div class="clasi">
+                <img src="image/classificacao.png" alt="" class="c12">
+            </div>
+        </footer>
+
+        <script src="main.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
